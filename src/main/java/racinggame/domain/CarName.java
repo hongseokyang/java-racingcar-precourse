@@ -9,10 +9,18 @@ public class CarName {
     private String name;
 
     public CarName(String name) {
-        if (!isValid(name)) {
-            throw new IllegalArgumentException("이름은 5자 이하의 값이어야 합니다.");
-        }
+        validate(name);
         this.name = name;
+    }
+
+    private void validate(String name) {
+        if (!isValid(name)) {
+            illegalArgumentException();
+        }
+    }
+
+    private void illegalArgumentException() {
+        throw new IllegalArgumentException("이름은 5자 이하의 값이어야 합니다.");
     }
 
     private boolean isValid(String name) {
