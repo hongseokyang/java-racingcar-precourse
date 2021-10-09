@@ -5,13 +5,13 @@ public class RandomRaceNumber {
     public static final int MAX_NO = 9;
     public static final int BOUNDARY_NO = 4;
 
-    private int randomNumber;
+    private int raceNumber;
 
     public RandomRaceNumber(int randomNumber) {
         if(!inValid(randomNumber)) {
             throw new IllegalArgumentException("랜덤 숫자는 0~9의 값이어야 합니다.");
         }
-        this.randomNumber = randomNumber;
+        this.raceNumber = randomNumber;
     }
 
     public boolean inValid(int randomNumber) {
@@ -19,6 +19,6 @@ public class RandomRaceNumber {
     }
 
     public boolean isPossibleMoveForward() {
-        return this.randomNumber >= BOUNDARY_NO;
+        return this.raceNumber >= BOUNDARY_NO;
     }
 }
