@@ -1,4 +1,4 @@
-package racinggame.domain;
+package racinggame.domain.race;
 
 import racinggame.utils.ValidationUtils;
 

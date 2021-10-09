@@ -1,4 +1,4 @@
-package racinggame.domain;
+package racinggame.domain.race;
 
 public class RaceNumber {
     public static final int MIN_NO = 0;
