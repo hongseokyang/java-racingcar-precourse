@@ -15,7 +15,7 @@ class RaceNumberTest {
         assertThatThrownBy(() -> {
             new RaceNumber(10);
         }).isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("랜덤 숫자는 0~9의 값이어야 합니다.");
+                .hasMessageContaining("게임 숫자는 0~9의 값이어야 합니다.");
     }
 
     @ParameterizedTest

@@ -7,11 +7,11 @@ public class RaceNumber {
 
     private int raceNumber;
 
-    public RaceNumber(int randomNumber) {
-        if(!inValid(randomNumber)) {
-            throw new IllegalArgumentException("랜덤 숫자는 0~9의 값이어야 합니다.");
+    public RaceNumber(int raceNumber) {
+        if(!inValid(raceNumber)) {
+            throw new IllegalArgumentException("게임 숫자는 0~9의 값이어야 합니다.");
         }
-        this.raceNumber = randomNumber;
+        this.raceNumber = raceNumber;
     }
 
     public boolean inValid(int randomNumber) {
